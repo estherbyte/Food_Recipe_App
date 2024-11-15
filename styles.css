@@ -140,7 +140,7 @@ form button[type="submit"]:hover,
   -webkit-transform: translate(-50%, -50%);
   background-color: rgb(59, 43, 45);
   border-radius: 12px;
-  width: 40%;
+  min-width: 43%;
   height: 60%;
   font-size: 20px;
   overflow-y: scroll;
