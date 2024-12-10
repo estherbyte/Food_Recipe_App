@@ -3,6 +3,11 @@ const searchBtn = document.querySelector(".searchBtn");
 const recipeContainer = document.querySelector(".recipe-container");
 const recipeDetailsContent = document.querySelector(".recipe-details-content");
 const recipeCloseBtn = document.querySelector(".recipe-close-btn");
+const recipeAddBtn = document.querySelector(".addBtn");
+const addDetails = document.querySelector(".addlist");
+const addCloseBtn = document.querySelector(".add-close-btn");
+const section = document.getElementById("section");
+const add = document.querySelector(".add");
 
 // Funtion to retrieve recipes
 
@@ -85,3 +90,30 @@ searchBtn.addEventListener("click", (e) => {
 
   // console.log("Button Clicked");
 });
+
+recipeAddBtn.addEventListener("click", () => {
+  section.style.display = "block";
+  addDetails.style.display = "block";
+  addCloseBtn.style.display = "block";
+
+  // searchInput.style.display = "none";
+});
+addCloseBtn.addEventListener("click", () => {
+  addDetails.style.display = "none";
+  section.style.display = "block";
+});
+
+add.addEventListener("click", function (e) {
+  e.preventDefault();
+  /*if (input = ""){
+    alert("pls fill out this field")
+  }*/
+  alert("Your recipe has been added.");
+});
+/*
+window.addEventListener("load", () => {
+  add = JSON.parse(localStorage.getItem("add")) || [];
+
+
+
+*/
