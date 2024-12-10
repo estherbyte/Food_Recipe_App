@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe App</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/71d07fa621.js" crossorigin="anonymous"></script>
-    
+
 </head>
 </head>
+
 <body>
     <header>
         <nav>
             <h1>Recipe App</h1>
             <form id="form">
                 <input type="text" placeholder="Search for recipes..." class="searchBox">
-            <button type="submit" class="searchBtn">Search</button>
+                <button type="submit" class="searchBtn">Search</button>
+                <button type="button" class="addBtn">Add</i></button>
             </form>
         </nav>
     </header>
     <main>
-        <section>
+        <section id="section">
             <div class="recipe-container">
                 <h2>Search Your Favourite Recipes</h2>
             </div>
@@ -29,23 +32,41 @@
                     <i class="fas fa-times"></i>
                 </button>
                 <div class="recipe-details-content"></div>
-                 <h1 class="rating_heading">Rate This Recipe</h1>
-    <div class="star_rating">
-        <button class="star">&#9734</button>
-        <button class="star">&#9734</button>
-        <button class="star">&#9734</button>
-        <button class="star">&#9734</button>
-        <button class="star">&#9734</button>
-        <p class="current_rating">0 of 5</p>
-    </div>
+                <h1 class="rating_heading">Rate This Recipe</h1>
+                <div class="star_rating">
+                    <button class="star">&#9734</button>
+                    <button class="star">&#9734</button>
+                    <button class="star">&#9734</button>
+                    <button class="star">&#9734</button>
+                    <button class="star">&#9734</button>
+                    <p class="current_rating">0 of 5</p>
+                </div>
             </div>
         </section>
+        <form class="addlist">
+            <div class="div">
+                <button type="button" class="add-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            <h2>Add Recipe</h2>
+            <ul>
+                <li>Recipe Name</li>
+                <input class="user" required>
+                <li>Ingredients</li>
+                <textarea class="user" required></textarea>
+                <li>Instructions</li>
+                <textarea class="user" required></textarea>
+                <li>Chef's Name</li>
+                <input class="user" required>
+            </ul>
+                    <button type="submit" class="add">Add Recipe</button>
+        </div>
+        </form>
     </main>
-    
+
 
     <script src="script.js"></script>
     <script src="star.js"></script>
-  </body>
-</html>
+</body>
 
-  
+</html>
